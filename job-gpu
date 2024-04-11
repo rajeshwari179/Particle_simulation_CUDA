@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH -J hw5-gpu    
+#SBATCH -N 1                          
+#SBATCH --ntasks-per-node=1                                 
+#SBATCH -t 00:15:00                  
+#SBATCH --gres=gpu:V100:1          
+#SBATCH --mem-per-gpu=12G          
+
+./gpu
